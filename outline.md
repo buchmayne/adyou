@@ -34,11 +34,3 @@ Another hypothetical feature would be to incorporate additional information rega
 
 * PyData Ecosystem -- analysis
 
-### Questions for Financing Professional ###
-
-1. 
-2.
-3. 
-4.
-5.
-
