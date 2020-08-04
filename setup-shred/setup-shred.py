@@ -1,31 +1,15 @@
-import psycopg2
-import osgeo.ogr
-import shapely
-import shapely.wkt
+import os
+from sqlalchemy import create_engine
 import geopandas as gpd
 
-DATABASE = {
-    'host': 'localhost',
-    'port': '5432',
-    'user': 'postgres',
-    'password': 'password',
-    'database': 'shred'
-}
+db_connection_url = "postgres://postgres:password@localhost:5432/shred"
+engine = create_engine(db_connection_url)
 
+path_to_rlis_folder = os.path.expanduser('~/RLIS/')
 
-con = psycopg2.connect(
-    database=DATABASE['database'],
-    user=DATABASE['user'],
-    password=DATABASE['password'],
-    host=DATABASE['host'],
-    port=DATABASE['port']
-    )
+taxlots_folder = os.path.join(path_to_rlis_folder, 'TAXLOTS')
+transit_folder = os.path.join(path_to_rlis_folder, 'TRANSIT')
 
-cur = con.cursor()
+taxlots = gpd.read_file(os.path.join(taxlots_folder, 'taxlots.shp'))
+taxlots.to_postgis(name="taxlots", con=engine, if_exists='replace', index=False, index_label='TLID')
 
-# execute sql commands below
-cur.execute('''select version();''')
-
-
-con.commit()
-con.close()
