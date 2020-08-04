@@ -20,7 +20,7 @@ Another hypothetical feature would be to incorporate additional information rega
 
 * CoStar -- create multifamily rent surface to identify what potential ADU rent might be
 
-* Multnomah County Permits -- Identify trends in ADU development
+* Portland Maps Permits -- Identify trends in ADU development
 
 ### Tech Stack ###
 
