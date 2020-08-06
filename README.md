@@ -34,3 +34,16 @@ Another hypothetical feature would be to incorporate additional information rega
 
 * PyData Ecosystem -- analysis
 
+
+### Short Term To Do ###
+
+1. Create interactive map of ADU permits
+2. Crosswalk ADU permits to taxlots
+3. Explore the `tl_many` table and identify whether or not it provides value
+4. Identify all properties that sold with an ADU 
+
+### Long Term To Do ###
+1. Develop spatial econometric model to estimate the value add of an ADU on property values
+2. Develop ML model to predict newly constructed ADU rent spatially
+3. Set up scraping infrastructure to begin tracking ADU rents
+4. Develop proforma model for ADU construction
