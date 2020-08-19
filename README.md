@@ -30,7 +30,7 @@ Another hypothetical feature would be to incorporate additional information rega
 
 * AWS S3
 
-* Heroku//Flask -- potentially service the analytcis modules as individual APIs
+* Heroku/Flask -- potentially service the analytics modules as individual APIs
 
 * PyData Ecosystem -- analysis
 
