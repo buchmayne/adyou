@@ -37,10 +37,8 @@ Another hypothetical feature would be to incorporate additional information rega
 
 ### Short Term To Do ###
 
-1. Create interactive map of ADU permits
-2. Crosswalk ADU permits to taxlots
-3. Explore the `tl_many` table and identify whether or not it provides value
-4. Identify all properties that sold with an ADU 
+1. Develop rent surface for ADUs
+2. Develop proforma model for ADU construction
 
 ### Long Term To Do ###
 1. Develop spatial econometric model to estimate the value add of an ADU on property values
